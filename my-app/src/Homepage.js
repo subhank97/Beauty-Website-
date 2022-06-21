@@ -1,14 +1,19 @@
 import React from "react";
 import ProductCollection from "./ProductCollection";
-import ShoppingCart from "./ShoppingCart";
 import Search from "./Search";
+import NavBar from "./NavBar";
+import './App.css';
 
 const Homepage = () =>{
     return (
         <div>
+            <NavBar />
             <ProductCollection />
-            <ShoppingCart />
             <Search />
+            <div class="homepage">
+                <h1>Welcome</h1>
+                <img id="Makeup" src="https://st2.depositphotos.com/1891407/10272/v/950/depositphotos_102725536-stock-illustration-beauty-shop-background.jpg" alt="Makeup" />
+            </div>
         </div>
     )
 }
