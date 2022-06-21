@@ -1,10 +1,11 @@
 import React from "react";
+import '../App.css'
 
-const ProductCard = () =>{
+function HomePage() {
     return (
         <div>
         </div>
     )
 }
 
-export default ProductCard
+export default HomePage;

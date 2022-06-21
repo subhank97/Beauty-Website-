@@ -1,9 +1,9 @@
-/* * {
+* {
   background-color: rgb(203, 194, 221);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} */
+}
 
 #Makeup {
   float: left;
@@ -11,7 +11,7 @@
   height: 400px;  
 }
 
-.categories{
+.product-categories{
   float: right;
   padding-right: 10%;
   padding-top: 4%;
@@ -20,7 +20,6 @@
 .nav-header {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(248, 233, 233);
   align-items: center;
 }
 
@@ -30,8 +29,4 @@
 
 #logo {
   height: 30px;
-}
-
-.homepage {
-  padding-left: 25%;
 }
