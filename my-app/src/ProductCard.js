@@ -1,11 +1,10 @@
 import React from "react";
 
-const NavBar = () =>{
+const ProductCard = () =>{
     return (
         <div>
-
         </div>
     )
 }
 
-export default NavBar
+export default ProductCard
