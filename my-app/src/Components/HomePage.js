@@ -16,6 +16,8 @@ function HomePage() {
                     <a className="cart" href="Cart">Cart</a>
             </nav>
             <h1>Beauty Store</h1>
+            <br></br>
+            <h2>Product List</h2>
         </div>
     )
 }
