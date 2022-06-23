@@ -1,12 +1,12 @@
 
 body {
-  background-color: rgb(217, 203, 228);
+  background-image: url("https://wallpaperaccess.com/full/1236520.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .nav{
-  background-color: rgba(172, 179, 245, 0.9);
+  background-color: rgba(100, 122, 159, 0.646);
   color: white;
   display: flex;
   box-sizing: border-box;
@@ -32,41 +32,60 @@ body {
   text-align: center;
   color: white;
 }
-.list{
-  width: 80%;
-  margin: auto;
-  margin-top: 5%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: auto;
+.homepage img{
+  width: 800px;
+  height: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list h1{
+  color: white;
+  text-align: center;
+}
+.Filter{
+  position: relative;
+  padding-left: 20px;
 }
 .card{
   width: 250px;
   padding: 20px;
 }
 .card:hover{
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 10px rgba(208, 205, 205, 0.314);
   cursor: pointer;
 }
-#img_box {
+.img_box img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
   width: 150px;
-  height: 200px;
 }
-.details p:nth-child(1) {
-  font-weight: bold;
-}
-.details p:nth-child(2) {
-  color: grey;
-  font-size: 0.8rem;
-}
-.details p:nth-child(3) {
-  font-weight: bolx;
-  color: grey;
+.details {
+  color: white;
 }
 .details button {
   padding: 5px 10px;
   border: none;
   font-weight: bold;
-  background-color: skyblue;
+  background-color: rgb(194, 165, 243);
   outline: none;
+}
+.about{
+  color: white;
+  text-align: center;
+}
+.about h1{
+  font-size: 4rem;
+}
+.about p{
+  font-size: 2rem;
+}
+.cart{
+  color: white;
 }

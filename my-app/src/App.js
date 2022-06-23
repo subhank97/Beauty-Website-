@@ -11,23 +11,17 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route path="/">
-          <Home />
+        <Route path="/Cart">
+          <Cart />
         </Route>
-      </Switch>
-      <Switch>
-        <Route path="/Product">
-          <Product />
-        </Route>
-      </Switch>
-      <Switch>
         <Route path="/About">
           <About />
         </Route>
-      </Switch>
-      <Switch>
-        <Route path="/Cart">
-          <Cart />
+        <Route path="/Product">
+          <Product />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
     </Router>

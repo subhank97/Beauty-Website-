@@ -4,7 +4,7 @@ import '../App.css'
 function Nav() {
 
     return (
-        <div>
+        <div className="homepage">
             <nav className="nav">
                 <ul>
                     <li>
