@@ -2,12 +2,17 @@ import React from "react";
 
 function ProductItem({ item }) {
     return (
-        <div>
-            <img alt="item" src={item.image} />
-            <h2>{item.name}</h2>
-            <h4>${item.price}</h4>
-            <p>Description: {item.description}</p>
-            <h5>Product Type: {item.product_type}</h5>
+        <div className="card">
+            <div className="img_box">
+                <img src={item.image} alt="makeup items" />
+            </div>
+            <div className="details">
+                <h2>{item.name}</h2>
+                <p>${item.price}</p>
+                <p>{item.description}</p>
+                <p>Product Type: {item.product_type}</p>
+                <button>Add to Cart</button>
+            </div>
         </div>
     )
 }
