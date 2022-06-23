@@ -1,11 +1,15 @@
 import React from "react";
 import '../App.css'
 
-function HomePage() {
+function Nav() {
+
     return (
-        <div className="homepage">
+        <div>
             <nav className="nav">
                 <ul>
+                    <li>
+                        <a href="Home">Home</a>
+                    </li>
                     <li>
                         <a href="Product">Product</a>
                     </li>
@@ -15,9 +19,8 @@ function HomePage() {
                 </ul>
                     <a className="cart" href="Cart">Cart</a>
             </nav>
-            <h1>Beauty Store</h1>
         </div>
     )
 }
 
-export default HomePage;
+export default Nav;

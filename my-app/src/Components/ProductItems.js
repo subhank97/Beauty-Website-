@@ -1,13 +1,19 @@
 import React from "react";
+import list from "../data";
 
-function ProductItem({ item }) {
+function ProductItem({ item, addItemClick }) {
     return (
-        <div>
-            <img src={item.image} />
-            <h2>{item.name}</h2>
-            <h4>${item.price}</h4>
-            <p>Description: {item.description}</p>
-            <h5>Product Type: {item.product.type}</h5>
+        <div className="cards">
+            <div>
+                <img id="image_box" src={item.image} alt="makeup items" />
+            </div>
+            <div className="details">
+                <p>{item.name}</p>
+                <p>${item.price}</p>
+                <p>{item.description}</p>
+                <p>Product Type: {item.product_type}</p>
+                <button>Add to Cart</button>
+            </div>
         </div>
     )
 }
