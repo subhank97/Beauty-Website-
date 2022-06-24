@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './Components/Home';
-import Product from './Components/Product';
+import ProductPage from './Components/ProductPage';
 import About from './Components/About';
 import Cart from './Components/Cart';
 import Nav from './Components/Nav';
@@ -17,8 +17,8 @@ function App() {
         <Route path="/About">
           <About />
         </Route>
-        <Route path="/Product">
-          <Product />
+        <Route path="/ProductPage">
+          <ProductPage />
         </Route>
         <Route path="/">
           <Home />

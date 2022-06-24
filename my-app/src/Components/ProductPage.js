@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
 import '../App.css';
-import ProductItem from "./ProductItems";
+import ProductCard from "./ProductCard";
 
-function Product() {
+function ProductPage() {
 
-    const [product, setProduct] = useState([])
+    const [productsArray, setProductsArray] = useState([])
 
+//fetching data from api and setting equal to productsArray
     useEffect(() =>{
         fetch('http://makeup-api.herokuapp.com/api/v1/products.json?limit=20')
-      .then(response => response.json())
-      .then(invData => setProduct(invData));
+            .then(response => response.json())
+            .then(invData => setProductsArray(invData));
     }, [])
+
+
 
     return (
         <div className="list">
@@ -32,12 +35,12 @@ function Product() {
             </div>
             <br></br>
             <div className="card-list">
-            {product.map(item => {
-                 return <ProductItem key={item.id} item={item}/>
+            {productsArray.map(item => {
+                 return <ProductCard key={item.id} item={item}/>
     })}
             </div>
         </div>
     )
 }
 
-export default Product;
+export default ProductPage;
