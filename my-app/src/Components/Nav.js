@@ -17,7 +17,7 @@ function Nav() {
                         <a href="About">About</a>
                     </li>
                 </ul>
-                    <a className="cart" href="Cart">Cart</a>
+                    <a className="request" href="AddRequest">Add Request for Item</a>
             </nav>
         </div>
     )

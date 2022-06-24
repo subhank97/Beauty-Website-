@@ -2,18 +2,24 @@ import './App.css';
 import Home from './Components/Home';
 import ProductPage from './Components/ProductPage';
 import About from './Components/About';
-import Cart from './Components/Cart';
+import AddRequest from './Components/AddRequest';
 import Nav from './Components/Nav';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
 
 function App() {
+
+
+  
+
+
+
   return (
     <Router>
       <Nav />
-      <Switch>
-        <Route path="/Cart">
-          <Cart />
-        </Route>
+      <Switch>   
+      <Route path="/AddRequest">
+          <AddRequest />
+        </Route>    
         <Route path="/About">
           <About />
         </Route>

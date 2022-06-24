@@ -5,21 +5,29 @@ import ProductCard from "./ProductCard";
 function ProductPage() {
 
     const [productsArray, setProductsArray] = useState([])
+    const [selectCategory, setSelectCategory] = useState("")
 
 //fetching data from api and setting equal to productsArray
     useEffect(() =>{
-        fetch('http://makeup-api.herokuapp.com/api/v1/products.json?limit=20')
+        fetch('http://makeup-api.herokuapp.com/api/v1/products.json?limit=50')
             .then(response => response.json())
             .then(invData => setProductsArray(invData));
-    }, [])
+    }, []) 
 
 
+    // const productsFilteredByCategory = productsArray.filter(prod=>{ 
+    //     return prod.category.includes(selectCategory)}
+    // )
+
+    function handleChange(event){
+      setSelectCategory(event.target.value);
+    }
 
     return (
         <div className="list">
-            <h1>List of Products</h1>
+            <h1>Products Page</h1>
             <div className="filter">
-                <select name="Filter">
+                <select name="Filter" onChange={handleChange} >
                 <option value="All">Filter by category</option>
                 <option value="blush">Blush</option>
                 <option value="bronzer">Bronzer</option>
@@ -34,10 +42,10 @@ function ProductPage() {
                 </select>
             </div>
             <br></br>
-            <div className="card-list">
-            {productsArray.map(item => {
+            <div className="card-list">   
+            {productsArray.filter(p => p.product_type === selectCategory.toLowerCase()).map(item => {
                  return <ProductCard key={item.id} item={item}/>
-    })}
+            })}
             </div>
         </div>
     )
